@@ -1,170 +1,237 @@
 /* Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 /* Cores */
-:root{
-    --dark-blue: #013243;
-    --black: #000000;
-    --white:  #ffffff;
-    --light-blue: #86bfd3;
-    --gray: #8d8d8d;
+:root {
+  --dark-blue: #013243;
+  --black: #000000;
+  --white: #ffffff;
+  --light-blue: #86bfd3;
+  --gray: #8d8d8d;
 }
 
 /* Style */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto",sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-b{
-    text-decoration: underline;
+b {
+  text-decoration: underline;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/Assets/Background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Assets/Background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main{
-    width: 50%;
-    height: 70%;
-    display: flex;
+main {
+  width: 50%;
+  height: 70%;
+  display: flex;
 }
 /* Login-Side */
-.gradie{
-    width: 100%;
-    height: auto;
-    display: flex;
+.gradie {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--dark-blue);
+  border: solid 1px var(--dark-blue);
+  border-right: none;
+  border-bottom: none;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.textos {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textos h1 {
+  color: var(--white);
+  font-weight: 595;
+}
+
+.textos p {
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.iphone-mockup {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.iphone-mockup img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Login-Side */
+
+.login {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  border: solid 1px var(--gray);
+  border-left: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.textos-login {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.textos-login h1 {
+  color: var(--black);
+  font-weight: 595;
+}
+.container {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.email-input-password {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.9rem;
+  border: solid 1px var(--gray);
+  border-radius: 0.2rem;
+}
+
+.checkbox {
+  width: 100%;
+  height: 25%;
+}
+
+.checkbox label {
+  font-weight: 500;
+  text-align: justify;
+}
+
+.btn {
+  width: 100%;
+  height: 20%;
+}
+button {
+
+  width: 100%;
+  height: 70%;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--dark-blue);
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  main {
+    width: 60%;
+    height: 95%;
     flex-direction: column;
+  }
+
+  .gradie {
+    height: 50%;
+    border-radius: 0;
+  }
+
+  .iphone-mockup{
+      width: 85%;
+  }
+
+  .login {
+    height: 50%;
+    border-radius: 0;
+  }
+  .container {
+    height: 85%;
+    justify-content: space-evenly;
+  }
+
+  .email-input-password {
+    width: 100%;
+    height: 20%;
+  }
+
+  .input-field {
+    padding: 0.5rem;
+  }
+
+  .btn {
+    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    background-color: var(--dark-blue);
-    border: solid 1px var(--dark-blue);
-    border-right: none;
-    border-bottom: none;
-    border-radius: 1rem 0 0 1rem ;
-}
+    height: 16%;
+  }
 
-.textos{
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  button {
+    height: 100%;
+  }
 }
-.textos h1{
-    color: var(--white);
-    font-weight: 595;
-}
-
-.textos p{
-    color: var(--light-blue);
-    text-align: center;
-}
-
-.iphone-mockup{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.iphone-mockup img{
+@media (max-width: 540px) {
+  main {
     width: 100%;
     height: 100%;
-}
-
-/* Login-Side */ 
-
-.login{
-    width: 100%;
-    height: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--white);
-    border: solid 1px var(--gray);
-    border-left: none;
-    border-radius: 0 1rem 1rem 0;
-}
-
-.textos-login{
-    width: 80%;
-    height: 10%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-
-.textos-login h1{
-    color: var(--black);
-    font-weight: 595;
-}
-.container{
-    width: 80%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.email-input-password{
+  }
+  .gradie {
     width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    height: 50%;
+    border-radius: 0;
+    border: none;
+  }
 
-.label{
-    font-size: 1rem;
-    font-weight: 500;
-}
+  .iphone-mockup{
+      width: 70%;
+  }
 
-.input-field{
+  .login {
     width: 100%;
-    padding: 0.9rem;
-    border: solid 1px var(--gray);
-    border-radius: 0.2rem;
+    height: 50%;
+    border-radius: 0;
+    justify-content: flex-end;
+  }
 }
-
-.checkbox{
-    width: 100%;
-    height: 25%;
-}
-
-.checkbox label{
-    font-weight: 500;
-}
-
-.btn{
-    width: 100%;
-    height: 20%;
-}
-button{
-    width: 100%;
-    height: 70%;
-    border:none;
-    border-radius: 0.2rem;
-    background-color: var(--dark-blue);
-    font-family: "Roboto", sans-serif;
-    color: var(--white);
-    font-weight: 500;
-    text-align: center;
-}
-
-
-
-
